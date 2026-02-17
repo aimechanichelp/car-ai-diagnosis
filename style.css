@@ -7,8 +7,16 @@ body {
 
 header {
   text-align: center;
-  padding: 30px 15px;
+  padding: 40px;
   background: #020617;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 140px; /* slightly bigger */
+  margin-bottom: 15px;
 }
 
 header h1 {
@@ -30,12 +38,16 @@ header p {
 
 .card {
   background: #1e293b;
-  padding: 20px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 320px;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
   text-align: center;
-  box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .premium {
@@ -47,15 +59,18 @@ header p {
 }
 
 button {
-  padding: 14px;
-  width: 100%;
+  padding: 14px 20px;
   background: #38bdf8;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 12px;
-  font-size: 16px;
+  color: #020617;
   font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
 }
 
 .upload {
@@ -63,15 +78,18 @@ button {
   margin: 40px 15px;
 }
 
-.upload input,
-.upload textarea {
-  width: 100%;
-  max-width: 350px;
-  margin-top: 10px;
+.upload input, .upload textarea {
+  width: 320px;
   padding: 10px;
   border-radius: 8px;
-  border: none;
-  box-sizing: border-box;
+  border: 1px solid #334155;
+  margin-top: 10px;
+  background: #0f172a;
+  color: white;
+}
+
+.upload button {
+  margin-top: 15px;
 }
 
 textarea {
@@ -85,12 +103,18 @@ footer {
 }
 
 /* Desktop improvements */
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 36px;
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
-  .pricing {
-    gap: 40px;
+  .card {
+    width: 90%;
+  }
+
+  .upload input, .upload textarea {
+    width: 90%;
   }
 }
