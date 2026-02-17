@@ -1,12 +1,16 @@
+/* Logo container: centers the logo */
 .logo-container {
-    text-align: center; /* centers the image horizontally */
-    margin: 20px 0;     /* optional: adds spacing above and below */
+    text-align: center;    /* horizontal centering */
+    margin: 20px 0;        /* spacing above and below */
 }
 
+/* Logo image: responsive */
 .site-logo {
-    width: 150px;       /* adjust size as needed */
-    height: auto;       /* maintains aspect ratio */
+    width: 150px;          /* adjust size as needed */
+    max-width: 80%;        /* ensures it fits on mobile screens */
+    height: auto;          /* maintain aspect ratio */
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
