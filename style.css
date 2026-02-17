@@ -6,7 +6,7 @@
 
 /* Logo image: responsive */
 .site-logo {
-    width: 150px;          /* adjust size as needed */
+    width: 200px;          /* adjust size as needed */
     max-width: 80%;        /* ensures it fits on mobile screens */
     height: auto;          /* maintain aspect ratio */
 }
@@ -20,7 +20,7 @@ body {
 
 header {
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   background: #020617;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@ header {
 }
 
 .logo {
-  width: 140px; /* slightly bigger */
+  width: 180px; /* slightly bigger */
   margin-bottom: 15px;
 }
 
