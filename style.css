@@ -253,7 +253,7 @@ footer {
 }
 
 /* MOBILE */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .pricing-wrapper {
         grid-template-columns: 1fr;
     }
