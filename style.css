@@ -6,8 +6,8 @@
 
 /* Logo image: responsive */
 .site-logo {
-    width: 200px;          /* adjust size as needed */
-    max-width: 80%;        /* ensures it fits on mobile screens */
+    width: 240px;          /* adjust size as needed */
+    max-width: 100%;        /* ensures it fits on mobile screens */
     height: auto;          /* maintain aspect ratio */
 }
 
