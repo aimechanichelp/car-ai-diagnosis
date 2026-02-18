@@ -1,8 +1,9 @@
-function buyNow() {
-  // Replace this later with your real Stripe payment link
-  window.location.href = "https://buy.stripe.com/test_payment_link";
-}
+function buyNow(){
+    if(localStorage.getItem("loggedIn") !== "true"){
+        alert("Please login first");
+        openLogin();
+        return;
+    }
 
-function submitIssue() {
-  alert("Your issue was submitted! You will receive a diagnosis by email.");
+    alert("Proceeding to payment...");
 }
