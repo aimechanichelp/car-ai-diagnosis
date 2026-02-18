@@ -283,8 +283,8 @@ header {
 
 /* Logo spacing */
 header img {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin-top: 5;
+    margin-bottom: 3px;
 }
 
 /* Title spacing */
