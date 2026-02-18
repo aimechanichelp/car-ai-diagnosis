@@ -173,38 +173,86 @@ footer {
     padding:8px;
 }
 
-/* ===== PRICING SECTION ONLY ===== */
+/* ===== CLEAN PRICING LAYOUT ===== */
 
 .pricing-section {
-    margin: 60px 0;
-}
-
-.pricing-section .pricing-container {
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
 }
 
-.pricing-section .price-box {
-    width: 260px;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+.pricing-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 40px;
+}
+
+/* Card */
+.pricing-card {
+    background: #1c2736;
+    padding: 30px 25px;
+    border-radius: 18px;
     text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.pricing-section .price-box button {
+.pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+.pricing-card h2 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    color: #4da3ff;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+/* Highlighted Plan */
+.featured {
+    border: 2px solid #4da3ff;
+    transform: scale(1.05);
+}
+
+/* Button */
+.buy-btn {
     margin-top: 15px;
-    padding: 10px 16px;
+    padding: 12px 18px;
     border: none;
-    background: #1f6feb;
+    border-radius: 10px;
+    background: #2f81f7;
     color: white;
-    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
 }
 
-.pricing-section .price-box button:hover {
-    background: #1558c0;
+.buy-btn:hover {
+    background: #1f6feb;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .pricing-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        transform: scale(1);
+    }
 }
